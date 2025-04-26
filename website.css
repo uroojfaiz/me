@@ -1,0 +1,169 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    color: #333;
+    font-family: Arial, sans-serif;
+   overflow-x: hidden;
+}
+.nav-bar{
+    background-color: #333;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.logo-img{
+    width: 50px;
+}
+.logo{
+   
+    margin-right: 20px;
+}
+.nav-links{
+    list-style: none;
+   
+    display: flex;
+}
+.nav-links li{
+margin-right: 20px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color:aqua;
+    font-weight: bold;
+    border-bottom:white 2px solid ;
+}
+.menu-icon{
+display: none;
+font-size: 24px;
+cursor: pointer;
+color: white;
+}
+#menu-toggle{
+    display: none;
+}
+
+header{
+    background-image: linear-gradient(to right,skyblue,lightpink,lightgreen);
+    color: #000000;
+    padding: 120px 20px;
+    text-align: center;
+    padding: relative;
+ 
+}
+section{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+   
+}
+section h2{
+    margin-bottom: 20px;
+    color: rgb(10, 133, 248);
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.card{
+    background-color: rgb(199, 199, 199);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 2px 2px 2px;
+}
+.card:hover{
+    background-color: rgb(87, 85, 85);
+    color: white;
+    cursor: pointer;
+}
+.contact-form{
+   height: 120px;
+  
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2fbeb3;
+    border-radius: 4px;
+}
+textarea{
+    resize: vertical;
+    height: 100px;
+}
+button{
+    padding: 15px;
+    background-color: rgb(14, 98, 255);
+    color: white;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+   
+}
+.footer{
+    background-color: #000000;
+    color: white;
+
+ margin-top:150px ;
+padding: 10px;
+text-align: center;
+font-size: 12px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 20px;
+    }
+    #menu-toggle:checked + .menu-icon+.nav-links{
+display: flex;
+    }
+    .nav-links li{
+        margin-bottom: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
+
